@@ -93,7 +93,7 @@ section {
 }
 
 .header .logo img{
-  height: 6rem;
+  height: 8rem;
 }
 
 /* Font-size was 1.6rem --> 4.2rem */
@@ -303,8 +303,6 @@ section {
 
 
 
-
-
 /* Media Queries */
 @media (max-width: 991px) {
   
@@ -359,12 +357,8 @@ section {
     text-align: center;
   }
 
-  .home .content h3 {
-    font-size: 4.5rem;
-  }
-
-  .home .content p {
-    font-size: 1.5rem;
+  html {
+    font-size: 55%;
   }
 
 
