@@ -80,7 +80,7 @@ section {
 }
 
 .header {
-  background: transparent, #fff;
+  background: transparent;
   backdrop-filter: blur(10px);
   display:flex;
   align-items: center;
