@@ -307,6 +307,7 @@ section {
 
 .about .row .image {
   flex: 1 1 45rem;
+  border-right: solid #2c1b14;
 }
 
 .about .row .image img{
