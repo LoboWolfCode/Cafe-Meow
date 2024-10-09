@@ -8,7 +8,7 @@
 :root {
   --main-color: #d3ad7f;
   --black: #13131a;
-  --bg: #ba8368;
+  --bg: #2C1B14;
   --border: .1rem solid rgba(255, 255, 255, .3);
 }
 
@@ -52,6 +52,20 @@ section {
   padding: 2rem 7%;
 }
 
+.heading-a {
+  text-align: center;
+  color: #fff;
+  text-transform: uppercase;
+  padding-top: 1.5rem;
+  padding-bottom: 3.5rem;
+  font-size: 4rem;
+}
+
+.heading-a span {
+  color: var(--main-color);
+  text-transform: uppercase;
+}
+
 .heading {
   text-align: center;
   color: #fff;
@@ -71,16 +85,59 @@ section {
   padding: .9rem 3rem;
   font-size: 3.4rem;
   color: #000000;
-  background: var(--main-color);
+  background: #d3ad7f;
   cursor: pointer;
 }
 
 .btn:hover {
-  letter-spacing: .2rem;
+  background-color: #d3ad7f7c;
+  transition: 0.5 ;
 }
 
+/*Special BTN styles*/
+
+.button-74 {
+  background-color: #fbeee0;
+  border: 2px solid #422800;
+  border-radius: 30px;
+  box-shadow: #422800 4px 4px 0 0;
+  color: #422800;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 3rem;
+  letter-spacing: .3rem;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-74:hover {
+  background-color: #fff;
+}
+
+.button-74:active {
+  box-shadow: #422800 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+
+@media (min-width: 768px) {
+  .button-74 {
+    min-width: 120px;
+    padding: 0 25px;
+  }
+}
+
+
+/* DONE EXTRA BTNS */
+
 .header {
-  background: transparent;
+  background: rgba(255, 255, 255, .3);
+  -webkit-backdrop-filter: blur(10px);
   backdrop-filter: blur(10px);
   display:flex;
   align-items: center;
@@ -143,7 +200,7 @@ section {
 .header .search-form input{
   height: 100%;
   width: 100%;
-  font-size: 1.6rem;
+  font-size: 3rem;
   color: var(--black);
   padding: 1rem;
   text-transform: none;
@@ -151,7 +208,7 @@ section {
 
 .header .search-form label{
   cursor: pointer;
-  font-size: 2.2rem;
+  font-size: 3rem;
   margin-right: 1.5rem;
   color: var(--black);
 }
@@ -198,13 +255,13 @@ section {
 }
 
 .header .cart-items-container .cart-item .content h3{
-  font-size: 2rem;
+  font-size: 3rem;
   color: var(--black);
   padding-bottom: 5rem;
 }
 
 .header .cart-items-container .cart-item .content .price{
-  font-size: 1.5rem;
+  font-size: 2rem;
   color: var(--main-color);
 }
 
@@ -243,8 +300,9 @@ section {
 .about .row {
   display: flex;
   align-items: center;
-  background: var(--black);
+  background: #A17544;
   flex-wrap: wrap;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .about .row .image {
@@ -261,13 +319,13 @@ section {
 }
 
 .about .row .content h3{
-  font-size: 3rem;
-  color: #fff;
+  font-size: 5rem;
+  color: #2c1b14;
 }
 
 .about .row .content p{
-  font-size: 1.6rem;
-  color: #ccc;
+  font-size: 3.5rem;
+  color: #2c1b14;
   padding: 1rem 0;
   line-height: 1.8;
 }
@@ -284,7 +342,7 @@ section {
 }
 
 .menu .box-container .box {
-  padding: 5rem;
+  padding: 2rem;
   text-align: center;
   border: var(--border);
 }
@@ -391,7 +449,7 @@ section {
 }
 
 .review .box-container .box p{
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   color: #ccc;
   padding: 2rem 0;
   line-height: 1.8;
@@ -420,12 +478,14 @@ section {
   background: var(--black);
   flex-wrap: wrap;
   gap: 1rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact .row .map {
   flex: 1 1 45rem;
   width: 100%;
   object-fit: cover;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .contact .row form {
@@ -451,14 +511,14 @@ section {
 
 .contact .row form .inputBox span {
   color:#fff;
-  font-size: 2rem;
+  font-size: 2.5rem;
   padding-left: 2rem;
 }
 
 .contact .row form .inputBox input {
   width: 100%;
-  padding: 2rem;
-  font-size: 1.7rem;
+  padding: 1.5rem;
+  font-size: 2.5rem;
   color: #fff;
   text-transform: none;
   background: none;
@@ -595,8 +655,11 @@ input[type=number] {
   appearance: textfield;
 }
 
-
-
+.quote {
+  background-size: 10px;
+  height:20%;
+  width: 20%;
+}
 
 
 
@@ -626,8 +689,10 @@ input[type=number] {
   .header .navbar{
     position: absolute;
     top: 100%; right: -100%;
-    background: #fff;
-    width: 30rem;
+    background: rgba(255, 255, 255, 1);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+    width: auto;
     height: calc(100vh - 9.5rem);
   }
 
@@ -637,10 +702,12 @@ input[type=number] {
 
   .header .navbar a{
     color: var(--black);
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin: 1.5rem;
     padding: .5rem;
-    font-size: 2rem;
+    font-size: 5rem;
   }
 
   .header .search-form{
