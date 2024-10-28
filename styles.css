@@ -87,8 +87,9 @@ section {
   padding: .9rem 3rem;
   font-size: 3.4rem;
   color: #000000;
-  background: #d3ad7f;
+  background: var(--main-color);
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .btn:hover {
@@ -299,6 +300,18 @@ section {
   color: #000000;
 } 
 
+.row {
+    border-radius: 10px;
+  }
+  
+  .about .row {
+    display: flex;
+    align-items: center;
+    background: #A17544;
+    flex-wrap: wrap;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+
 .about .row {
   display: flex;
   align-items: center;
@@ -314,6 +327,7 @@ section {
 
 .about .row .image img{
   width: 100%;
+  border-radius: 10px 0px 0px 10px;
 }
 
 .about .row .content {
@@ -348,6 +362,9 @@ section {
   padding: 2rem;
   text-align: center;
   border: var(--border);
+  border-radius: 10px;
+  background: #A17544;
+
 }
 
 .menu .box-container .box img{
@@ -386,10 +403,16 @@ section {
   gap: 1.5rem;
 }
 
+.box {
+  background-color: #A17544;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .products .box-container .box {
   text-align: center;
   border: var(--border);
-  padding: 2rem
+  padding: 2rem;
+  border-radius: 10px;
 }
 
 .products .box-container .box .icons a {
@@ -397,9 +420,9 @@ section {
   width: 5rem;
   line-height: 5rem;
   font-size: 2rem;
-  border: var(--border);
   color: #fff;
   margin: .3rem;
+  border-radius: 10px;
 }
 
 .products .box-container .box .icons a:hover {
@@ -449,11 +472,12 @@ section {
   border: var(--border);
   text-align: center;
   padding: 3rem 2rem;
+  border-radius: 10px;
 }
 
 .review .box-container .box p{
   font-size: 2.5rem;
-  color: #ccc;
+  color: #fff;
   padding: 2rem 0;
   line-height: 1.8;
 }
@@ -478,7 +502,7 @@ section {
 
 .contact .row {
   display: flex;
-  background: var(--black);
+  background: #A17544;
   flex-wrap: wrap;
   gap: 1rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -489,6 +513,7 @@ section {
   width: 100%;
   object-fit: cover;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px 0px 500px 10px;
 }
 
 .contact .row form {
@@ -509,7 +534,8 @@ section {
   margin-top: 2rem;
   margin-bottom: 2rem;
   background: var(--bg);
-  border: var(--border);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border-radius: 10px;
 }
 
 .contact .row form .inputBox span {
@@ -533,48 +559,52 @@ section {
   gap: 1.5rem;
 }
 
-.blogs .box-container .box {
+.blogs .box-container .box1 {
   border: var(--border);
+  border-radius: 10px;
+
 }
 
-.blogs .box-container .box .image {
+.blogs .box-container .box1 .image {
   height: 25rem;
   overflow: hidden;
   width: 100%;
+  border-radius: 10px 10px 0px 0px;
+
 }
 
-.blogs .box-container .box .image img {
+.blogs .box-container .box1 .image img {
   height: 100%;
   object-fit: cover;
   width: 100%;
 }
 
-.blogs .box-container .box:hover .image img {
-  transform: scale(1.2)
+.blogs .box-container .box1:hover .image img {
+  transform: scale(1.2);
 }
 
-.blogs .box-container .box .content{
+.blogs .box-container .box1 .content{
   padding: 2rem;
 }
 
-.blogs .box-container .box .content .title{
+.blogs .box-container .box1 .content .title{
   font-size: 2.5rem;
   line-height: 1.5;
   color: #fff;
 }
 
-.blogs .box-container .box .content .title:hover {
+.blogs .box-container .box1 .content .title:hover {
   color: var(--main-color);
 }
 
-.blogs .box-container .box .content span{
+.blogs .box-container .box1 .content span{
   color: var(--main-color);
   display: block;
   padding-top: 1rem;
   font-size: 2rem;
 }
 
-.blogs .box-container .box .content p{
+.blogs .box-container .box1 .content p{
   font-size: 1.6rem;
   line-height: 1.8;
   color: #fff;
