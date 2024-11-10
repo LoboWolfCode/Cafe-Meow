@@ -263,6 +263,18 @@ section {
   padding-bottom: 5rem;
 }
 
+
+/*Pepero Day Event STARTS*/
+.pdlink {
+  color: black;
+}
+
+.pdlink:hover {
+  color: var(--main-color);
+}
+/*Pepero Day Event ENDS*/
+
+
 .header .cart-items-container .cart-item .content .price{
   font-size: 2rem;
   color: var(--main-color);
